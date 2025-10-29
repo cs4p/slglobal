@@ -1,0 +1,6 @@
+name = "slglobal"
+compatibility_date = "2025-10-29"
+main = "index.html"
+
+[site]
+bucket = "./"
