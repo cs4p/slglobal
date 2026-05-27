@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="contact page-top" id="contact">
+  <div class="contact-inner">
+    <div class="contact-photo-wrap">
+      <img class="contact-photo" src="/images/contact.jpg" alt="Get in touch">
+    </div>
+    <div class="contact-right">
+      <p class="section-tag">Get in touch</p>
+      <h2 class="section-title">Ready to drive <em>impact</em>?</h2>
+      <div class="divider"></div>
+      <p class="contact-body">{{ .Params.body }}</p>
+      <span class="contact-email">{{ .Params.email }}</span>
+      <div class="contact-links">
+        <a class="contact-btn contact-btn-primary" href="mailto:{{ .Params.email }}">Email us &rarr;</a>
+        <a class="contact-btn contact-btn-secondary" href="{{ .Params.linkedin }}" target="_blank">LinkedIn &nearr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

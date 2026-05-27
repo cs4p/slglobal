@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="about page-top" id="about">
+  <p class="section-tag">Meet the founders</p>
+  <h2 class="section-title">The people behind <em>SLGlobal</em></h2>
+  <div class="divider"></div>
+  <div class="bios">
+    {{ range .Params.founders }}
+    <div class="bio-card">
+      <div class="bio-photo-wrap">
+        <img class="bio-photo" src="{{ .photo }}" alt="{{ .name }}">
+      </div>
+      <div class="bio-text-wrap">
+        <div class="bio-name">{{ .name }}</div>
+        <div class="bio-role">{{ .role }}</div>
+        <div class="bio-body">
+          {{ range .bio }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

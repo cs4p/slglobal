@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="testimonials page-top" id="testimonials">
+  <p class="section-tag">Testimonials</p>
+  <h2 class="section-title">What clients <em>say</em></h2>
+  <div class="divider"></div>
+  <div class="testimonials-grid">
+    {{ range .Params.testimonials }}
+    <div class="testimonial-card">
+      <span class="quote-mark">&ldquo;</span>
+      <p class="quote-text">{{ .quote }}</p>
+      <p class="quote-attr"><strong>{{ .name }}</strong>{{ .role }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

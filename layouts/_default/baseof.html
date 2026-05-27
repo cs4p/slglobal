@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}SLGlobal — Senior Leadership Global{{ else }}{{ .Title }} · SLGlobal{{ end }}</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">SL<span>Global</span></a>
+  <ul class="nav-links">
+    <li><a href="/about/"{{ if eq .RelPermalink "/about/" }} class="active"{{ end }}>About</a></li>
+    <li><a href="/services/"{{ if eq .RelPermalink "/services/" }} class="active"{{ end }}>Services</a></li>
+    <li><a href="/testimonials/"{{ if eq .RelPermalink "/testimonials/" }} class="active"{{ end }}>Testimonials</a></li>
+    <li><a href="/contact/"{{ if eq .RelPermalink "/contact/" }} class="active"{{ end }}>Contact</a></li>
+  </ul>
+</nav>
+
+{{ block "main" . }}{{ end }}
+
+<footer>
+  <div class="footer-logo">Senior Leadership Global &middot; SLGlobal</div>
+  <div class="footer-note">Woman-owned small business &middot; leadership@SLGlobal.org</div>
+</footer>
+
+</body>
+</html>
