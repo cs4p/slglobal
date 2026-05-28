@@ -7,7 +7,6 @@
   <div class="services-grid">
     {{ range .Params.services }}
     <div class="service-item">
-      <div class="service-num">{{ .num }}</div>
       <div class="service-title">{{ .title }}</div>
       {{ range .paragraphs }}<p class="service-text">{{ . }}</p>{{ end }}
       {{ range .subtitles }}
