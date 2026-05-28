@@ -10,7 +10,7 @@
       <div class="service-title">{{ .title }}</div>
       {{ range .paragraphs }}<p class="service-text">{{ . }}</p>{{ end }}
       {{ range .subtitles }}
-      <div class="service-subtitle">{{ .label }}</div>
+      {{ if .label }}<div class="service-subtitle">{{ .label }}</div>{{ end }}
       <ul class="service-bullets">
         {{ range .bullets }}<li>{{ . }}</li>{{ end }}
       </ul>
