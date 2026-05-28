@@ -42,14 +42,14 @@ services:
           - "Institutional Resilience: We focus on strengthening the foundational capabilities of institutions to ensure long-term sustainability."
           - "Operational Optimization: Management services designed to enhance organizational structures and streamline internal processes."
           - "Adaptive Change: Tailored change management services that help organizations pivot quickly to meet new strategies and global demands."
-    - num: "04"
-      title: "Leadership Development"
-      paragraphs:
-        - "As seasoned Executive Leaders, we work at both the institutional and individual levels to cultivate the next generation of leadership. We build leadership teams that are not only high-performing but also capable of delivering transformative results in complex global environments."
-      subtitles:
-        - label: ""
-          bullets:
-            - "Executive-Level Advisory: Working directly with senior leaders to strengthen performance, accountability, and vision."  
-            - "Team Synergy: Developing leadership teams that can operate cohesively across different cultures and organizational boundaries."  
-            - "Capacity Building: Designing development tracks that empower 'rising stars' and mid-career professionals to step into high-stakes roles with confidence."
+  - num: "04"
+    title: "Leadership Development"
+    paragraphs:
+      - "As seasoned Executive Leaders, we work at both the institutional and individual levels to cultivate the next generation of leadership. We build leadership teams that are not only high-performing but also capable of delivering transformative results in complex global environments."
+    subtitles:
+      - label: ""
+        bullets:
+          - "Executive-Level Advisory: Working directly with senior leaders to strengthen performance, accountability, and vision."
+          - "Team Synergy: Developing leadership teams that can operate cohesively across different cultures and organizational boundaries."
+          - "Capacity Building: Designing development tracks that empower 'rising stars' and mid-career professionals to step into high-stakes roles with confidence."
 ---
