@@ -11,7 +11,6 @@ founders:
       - "Sara is a Leadership Coach, having obtained her Executive Certificate in Leadership Coaching from Georgetown University in 2023. As a recipient of coaching herself, Sara believes that everyone can benefit from coaching. She specializes in executive coaching, leadership development, and coaching careers in transition."
       - "Prior to joining USAID, Sara worked for a foreign policy think tank and the U.S. Institute of Peace in Washington D.C. She also worked as a program developer at a non-profit organization overseas."
       - "Sara holds a Master's degree in International Peace and Conflict Resolution from American University, and a Joint Honors Bachelor degree in Middle East Studies and Religious Studies from McGill University in Montreal, Canada."
-      - "Sara can be contacted at [leadership@SLGlobal.org](mailto:leadership@SLGlobal.org)"
   - name: "Jessica Zaman"
     role: "Co-Founder & Managing Director"
     photo: "/images/jessica.jpg"
