@@ -4,18 +4,25 @@
   <h2 class="section-title">Strategic advisory for a <em>complex world</em></h2>
   <div class="divider"></div>
   <p class="services-intro">{{ .Params.intro }}</p>
-  <div class="services-grid">
+
+  <div class="services-accordion">
     {{ range .Params.services }}
-    <div class="service-item">
-      <div class="service-title">{{ .title }}</div>
-      {{ range .paragraphs }}<p class="service-text">{{ . }}</p>{{ end }}
-      {{ range .subtitles }}
-      {{ if .label }}<div class="service-subtitle">{{ .label }}</div>{{ end }}
-      <ul class="service-bullets">
-        {{ range .bullets }}<li>{{ . }}</li>{{ end }}
-      </ul>
-      {{ end }}
-    </div>
+    <details class="service-item">
+      <summary class="service-summary">
+        <span class="service-num">{{ .num }}</span>
+        <span class="service-title">{{ .title }}</span>
+        <span class="service-chevron"></span>
+      </summary>
+      <div class="service-body">
+        {{ range .paragraphs }}<p class="service-text">{{ . }}</p>{{ end }}
+        {{ range .subtitles }}
+        {{ if .label }}<div class="service-subtitle">{{ .label }}</div>{{ end }}
+        <ul class="service-bullets">
+          {{ range .bullets }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </details>
     {{ end }}
   </div>
 </section>

@@ -9,12 +9,12 @@
 </head>
 <body>
 
-<nav>
+<nav id="main-nav">
   <a class="nav-logo" href="/">SL<span>Global</span></a>
-  <button class="nav-toggle" aria-label="Toggle menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
-  <ul class="nav-links">
+  <ul class="nav-links" id="nav-links">
     <li><a href="/about/"{{ if eq .RelPermalink "/about/" }} class="active"{{ end }}>About</a></li>
     <li><a href="/services/"{{ if eq .RelPermalink "/services/" }} class="active"{{ end }}>Services</a></li>
     <li><a href="/testimonials/"{{ if eq .RelPermalink "/testimonials/" }} class="active"{{ end }}>Testimonials</a></li>
@@ -34,6 +34,15 @@
   </nav>
   <div class="footer-note">Woman-owned small business &middot; leadership@SLGlobal.org</div>
 </footer>
+
+<script>
+  var toggle = document.getElementById('nav-toggle');
+  var links = document.getElementById('nav-links');
+  toggle.addEventListener('click', function() {
+    toggle.classList.toggle('open');
+    links.classList.toggle('open');
+  });
+</script>
 
 </body>
 </html>
